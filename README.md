@@ -1,1 +1,4 @@
-Just my notes about git
+# Just my notes about git
+
+## Git Commit
+
