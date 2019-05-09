@@ -1,0 +1,1 @@
+git -c credential.helper= clone https://bitbucket/scm/roos-libs/elk-starter.git
