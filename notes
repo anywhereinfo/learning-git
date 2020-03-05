@@ -1,1 +1,39 @@
 git -c credential.helper= clone https://bitbucket/scm/roos-libs/elk-starter.git
+git commit --amend --reset-author
+git log --format=raw
+git cat-file -p <<hash>>
+echo "banana" | git hash-object --stdin
+git pull
+git branch <<name of your new branch>> //creates a new branch
+git checkout -b <<name of new branch>> //this will create a branch on your local machine and switch to this machine
+git push origin << name of new branch>> //push new branch to github
+git branch -a //see all branches
+
+
+git remote add << name of your remote>> << name of new branch >> // adds a new remote for your branch
+git push << name of your new remote>> <<url>> //push changes from your commit into your branch
+
+git fetch <<name ofyour new remote>> //fetch changes
+
+git branch -d <<name of your new branch>> //delete a branch on your local file system
+
+git branch -D <<name of your new branch>> //force deletion of branch on your local file system
+
+git push origin:<<name of your new branch>> /delete branch on github
+
+git reset HEAD //unstage all files that u added via git add --all
+
+git log -p -- <file> // show commit logs and diff between versions of the file
+
+git log --follow -p -- <file> // show history of commits with diffs including renames
+
+//previous commit SHA
+git rev-parse --short "HEAD^"
+
+//latest commit SHA
+git rev-parse --short HEAD
+
+//diff between latest and previous
+git diff --name-only previous_commit_sha latest_commit_sha
+
+ 
