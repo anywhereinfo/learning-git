@@ -36,4 +36,5 @@ git rev-parse --short HEAD
 //diff between latest and previous
 git diff --name-only previous_commit_sha latest_commit_sha
 
- 
+//git all pulling unrelated histories
+git pull --allow-unrelated-histories 
